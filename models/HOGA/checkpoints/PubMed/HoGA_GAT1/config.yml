@@ -1,0 +1,108 @@
+baselines:
+  HoGA_GAT:
+    K_hops: 3
+    agg_func: sum
+    beta_mul: 1.0
+    device: cuda:0
+    drop_out: 0.6
+    head_type: gat
+    hidden_channels: 64
+    layer_type: multi_hop
+    load_samples: true
+    log_interval: 20
+    loops: true
+    model_name: HoGA GAT
+    num_heads:
+    - 8
+    - 1
+    num_heads_small: 1
+    num_layers: 2
+    save_path: ./checkpoints/generic_gat.pt
+    select_method: sim_walk
+    training:
+      decay: 0.95
+      drop_out: 0.6
+      early_stop_patience: 100
+      lr: 0.05
+      num_epochs: 100
+      optimizer: adam
+      save_freq: 50
+      weight_decay: 0.0005
+    walk:
+      gamma: 0.9
+      jump_prob: 0.05
+      use_cosine: true
+  names:
+  - HoGA_GAT
+citeseer:
+  hidden_channels: 64
+  in_channels: 3703
+  loss: cross_entropy
+  metrics:
+  - Accuracy
+  name: Citeseer
+  num_classes: 6
+  num_nodes: 3327
+  save_path: model_runs
+computers:
+  hidden_channels: 128
+  in_channels: 767
+  loss: cross_entropy
+  metrics:
+  - Accuracy
+  name: Computers
+  num_classes: 10
+  num_nodes: 13752
+  save_path: model_runs
+cora:
+  hidden_channels: 64
+  in_channels: 1433
+  loss: cross_entropy
+  metrics:
+  - Accuracy
+  name: Cora
+  num_classes: 7
+  num_nodes: 2708
+  save_path: model_runs
+experiments:
+  num_repeats: 20
+photo:
+  hidden_channels: 128
+  in_channels: 745
+  loss: cross_entropy
+  metrics:
+  - Accuracy
+  name: Photo
+  num_classes: 8
+  num_nodes: 7650
+  save_path: model_runs
+pubmed:
+  hidden_channels: 64
+  in_channels: 500
+  loss: cross_entropy
+  metrics:
+  - Accuracy
+  name: PubMed
+  num_classes: 3
+  num_nodes: 19717
+  save_path: model_runs
+texas:
+  hidden_channels: 64
+  in_channels: 1703
+  loss: cross_entropy
+  metrics:
+  - Accuracy
+  name: Texas
+  num_classes: 5
+  num_nodes: 183
+  save_path: model_runs
+wisconsin:
+  hidden_channels: 64
+  in_channels: 1703
+  loss: cross_entropy
+  metrics:
+  - Accuracy
+  name: Wisconsin
+  num_classes: 5
+  num_nodes: 251
+  save_path: model_runs

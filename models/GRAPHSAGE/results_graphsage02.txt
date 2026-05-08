@@ -1,0 +1,6 @@
+dataset=cora runs=10 epochs=300 layers=2 hidden=64 neighbors=25,10 batch_size=1024 dropout=0.5 lr=0.01 wd=0.0005 avg_best_val=0.78900 avg_best_test=0.80230
+dataset=citeseer runs=10 epochs=300 layers=2 hidden=64 neighbors=25,10 batch_size=1024 dropout=0.5 lr=0.01 wd=0.0005 avg_best_val=0.71600 avg_best_test=0.70550
+dataset=pubmed runs=10 epochs=300 layers=2 hidden=64 neighbors=25,10 batch_size=1024 dropout=0.5 lr=0.01 wd=0.0005 avg_best_val=0.80740 avg_best_test=0.77320
+dataset=cora runs=10 epochs=300 layers=2 hidden=64 neighbors=25,10 batch_size=1024 dropout=0.5 lr=0.01 wd=0.0005 avg_best_val=0.78900 avg_best_test=0.80230
+dataset=citeseer runs=10 epochs=300 layers=2 hidden=64 neighbors=25,10 batch_size=1024 dropout=0.5 lr=0.01 wd=0.0005 avg_best_val=0.71600 avg_best_test=0.70570
+dataset=pubmed runs=10 epochs=300 layers=2 hidden=64 neighbors=25,10 batch_size=1024 dropout=0.5 lr=0.01 wd=0.0005 avg_best_val=0.80740 avg_best_test=0.77320
